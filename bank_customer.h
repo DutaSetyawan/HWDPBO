@@ -2,7 +2,7 @@
 #define BANK_CUSTOMER_H
 
 #include <string>
-#include <vector> // Tambahkan ini
+#include <vector> 
 
 using namespace std;
 
@@ -14,7 +14,7 @@ private:
     string address;
     string phoneNumber;
     string email;
-    vector<string> transactionHistory; // Tambahkan ini
+    vector<string> transactionHistory; 
 
 public:
     BankCustomer(int id, const string& name, double balance, const string& addr, const string& phone, const string& mail);
@@ -24,7 +24,7 @@ public:
     double getBalance() const;
 
     void printInfo() const;
-    void printTransactionHistory() const; // Tambahkan ini
+    void printTransactionHistory() const; 
     void setName(const string& name);
     void setBalance(double balance);
     void addBalance(double amount);
