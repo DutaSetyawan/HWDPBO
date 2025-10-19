@@ -27,6 +27,7 @@ public:
     const string& getStorePhoneNumber() const { return storePhoneNumber; }
     const string& getStoreEmail() const { return storeEmail; }
     vector<Item>& getItems() { return items; }
+    const vector<Item>& getItems() const { return items; }
 
     void addNewItem(int newId, const string& newName, int newQuantity, double newPrice) {
         Item newItem(newId, newName, newQuantity, newPrice);

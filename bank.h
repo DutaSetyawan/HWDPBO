@@ -24,6 +24,17 @@ public:
         nextCustomerId++;
         return accounts.back();
     }
+
+    
+    BankCustomer& createAccountWithId(int id, const string& customerName, const string& addr, const string& phone, const string& mail, double balance) {
+        BankCustomer newAccount(id, customerName, balance, addr, phone, mail);
+        accounts.push_back(newAccount);
+        
+        if (id >= nextCustomerId) {
+            nextCustomerId = id + 1;
+        }
+        return accounts.back();
+    }
     
     void deleteAccountById(int id) {
         auto it = remove_if(accounts.begin(), accounts.end(), [id](const BankCustomer& acc) {

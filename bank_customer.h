@@ -22,6 +22,10 @@ public:
     int getId() const;
     string getName() const;
     double getBalance() const;
+    // getters for persisted fields
+    const string& getAddress() const { return address; }
+    const string& getPhoneNumber() const { return phoneNumber; }
+    const string& getEmail() const { return email; }
 
     void printInfo() const;
     void printTransactionHistory() const; 

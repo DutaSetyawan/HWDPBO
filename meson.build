@@ -25,13 +25,8 @@ add_global_arguments(cpp_args, language : 'cpp')
 app_sources = [
     'main.cpp',
     'bank_customer.cpp',
-    'bank_customer.h', 
-    'buyer.h',
-    'seller.h',
-    'item.h',
-    'cart.h',
-    'order.h',
-    'bank.h'
+    'persistence.cpp',
+    'ui.cpp'
 ]
 
 executable('my_app',
